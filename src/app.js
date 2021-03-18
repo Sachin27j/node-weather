@@ -41,14 +41,14 @@ app.get('',(req,res)=>{
 app.get('/about',(req,res)=>{
     res.render('about',{
         name:'Sachin ',
-        title:28
+        title:'About'
     })
 })
 app.get('/help',(req,res)=>{
     res.render('help',{
-        helpText:'Call Sachin',
-        title:'Sachin',
-        name:'DilKaChor'
+        helpText:'Refer the documentation',
+        title:'Help',
+        name:'Sachin'
     })
 })
 app.get('/help/*',(req,res)=>{
